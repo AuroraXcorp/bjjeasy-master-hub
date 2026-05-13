@@ -148,7 +148,7 @@ function Recursos() {
       </div>
 
       <div className="grid items-center gap-10 lg:grid-cols-2">
-        <img src={featureCheckin} alt="Tela de chamada" loading="lazy" width={800} height={1024} className="mx-auto w-full max-w-sm" />
+        <PhoneMockup src={featureCheckin} alt="Tela de chamada" className="max-w-[260px]" />
         <div className="grid gap-6">
           {features.map((f) => (
             <div key={f.title} className="rounded-2xl border border-border bg-card p-6">
