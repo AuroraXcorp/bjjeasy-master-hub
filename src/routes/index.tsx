@@ -197,15 +197,15 @@ function PorQue() {
 
 function NovoRecurso() {
   return (
-    <section style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-dark) 12%, var(--tint-dark) 88%, #fff 100%)", color: "white" }}>
+    <section style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-mint) 40%, var(--tint-mint) 60%, #fff 100%)" }}>
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-24 lg:grid-cols-2">
         <div>
-          <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white/80">Novo recurso</span>
-          <h2 className="mt-5 text-4xl font-extrabold leading-tight md:text-5xl text-white">
-            Ranking de evolução <span className="text-white/70">para sua academia 🏆</span>
+          <span className="rounded-full border border-border bg-card px-3 py-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Novo recurso</span>
+          <h2 className="mt-5 text-4xl font-extrabold leading-tight md:text-5xl">
+            Ranking de evolução <span className="text-muted-foreground">para sua academia 🏆</span>
           </h2>
-          <p className="mt-4 text-white/70">Veja quem treinou mais no mês, quem está perto de graduar e mantenha a competição saudável dentro do tatame.</p>
-          <p className="mt-2 text-sm text-white/50">Novidades toda semana 🚀</p>
+          <p className="mt-4 text-muted-foreground">Veja quem treinou mais no mês, quem está perto de graduar e mantenha a competição saudável dentro do tatame.</p>
+          <p className="mt-2 text-sm text-muted-foreground">Novidades toda semana 🚀</p>
         </div>
         <PhoneMockup src={featureDark} alt="Ranking de alunos" className="max-w-[240px]" />
       </div>
