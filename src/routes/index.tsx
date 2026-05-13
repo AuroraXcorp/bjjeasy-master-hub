@@ -139,7 +139,7 @@ const features = [
 
 function Recursos() {
   return (
-    <section id="recursos" style={{ backgroundColor: "var(--tint-mint)" }}>
+    <section id="recursos" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-mint) 20%, var(--tint-mint) 80%, #fff 100%)" }}>
       <div className="mx-auto max-w-7xl px-6 py-20">
       <div className="mb-14 text-center">
         <h2 className="text-3xl font-extrabold md:text-5xl">O que o BJJEASY oferece?</h2>
