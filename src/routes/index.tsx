@@ -241,7 +241,7 @@ function Reviews() {
 
 function FinalCTA() {
   return (
-    <section id="cta" className="relative overflow-hidden border-t border-border" style={{ backgroundColor: "var(--tint-peach)" }}>
+    <section id="cta" className="relative overflow-hidden" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-peach) 25%, var(--tint-peach) 100%)" }}>
       <div className="relative mx-auto max-w-4xl px-6 py-24 text-center">
         <div className="mb-6 flex justify-center gap-1 text-accent">
           {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-6 w-6 fill-current" />)}
