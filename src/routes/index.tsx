@@ -37,22 +37,29 @@ function StoreButtons() {
 function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4">
         <a href="/" className="flex items-center gap-2 text-xl font-extrabold tracking-tight">
           <span className="grid h-9 w-9 place-items-center rounded-xl" style={{ background: "var(--gradient-gold)" }}>
             <Dumbbell className="h-5 w-5 text-background" />
           </span>
           BJJ<span className="text-primary">EASY</span>
         </a>
-        <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
-          <a href="#recursos" className="hover:text-foreground">Recursos</a>
-          <a href="#mestres" className="hover:text-foreground">Mestres</a>
-          <a href="#avaliacoes" className="hover:text-foreground">Avaliações</a>
-          <a href="#preco" className="hover:text-foreground">Preço</a>
+        <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
+          <a href="/" className="hover:text-foreground/70">Início</a>
+          <a href="#" className="hover:text-foreground/70">Blog</a>
+          <a href="#" className="hover:text-foreground/70">Vagas</a>
+          <a href="#" className="hover:text-foreground/70">Imprensa</a>
+          <a href="#" className="hover:text-foreground/70">Assinatura</a>
+          <a href="#" className="hover:text-foreground/70">Login</a>
         </nav>
-        <a href="#cta" className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90">
-          Começar grátis
-        </a>
+        <div className="hidden items-center gap-2 md:flex">
+          <a href="#" className="inline-block transition hover:scale-[1.03]">
+            <img src={appStoreBadge} alt="Baixe na App Store" className="h-10 w-auto" />
+          </a>
+          <a href="#" className="inline-block transition hover:scale-[1.03]">
+            <img src={googlePlayBadge} alt="Disponível no Google Play" className="h-10 w-auto" />
+          </a>
+        </div>
       </div>
     </header>
   );
@@ -76,7 +83,7 @@ function Hero() {
           <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
             Conheça o BJJEASY
             <span className="mt-3 block bg-clip-text text-transparent" style={{ backgroundImage: "var(--gradient-gold)" }}>
-              Controle suas aulas com um toque
+              Controle suas aulas pelo celular
             </span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
