@@ -12,6 +12,7 @@ import cardMaeFilho from "@/assets/card-mae-filho.jpg";
 import cardAlunoRoxa from "@/assets/card-aluno-roxa.jpg";
 import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
+import bjjeasyLogo from "@/assets/bjjeasy-logo.png";
 import { PhoneMockup } from "@/components/PhoneMockup";
 
 export const Route = createFileRoute("/")({
