@@ -79,7 +79,7 @@ function Hero() {
               <img src={master2} alt="" className="h-6 w-6 rounded-full border-2 border-background object-cover" />
               <img src={master3} alt="" className="h-6 w-6 rounded-full border-2 border-background object-cover" />
             </div>
-            <span className="text-muted-foreground">Usado por +10mil mestres com</span>
+            <span className="text-muted-foreground">Usado por mestres em todo o 🇧🇷 com</span>
             <span className="inline-flex items-center gap-1 font-semibold text-accent"><Star className="h-3.5 w-3.5 fill-current" /> 4.9</span>
           </div>
           <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
