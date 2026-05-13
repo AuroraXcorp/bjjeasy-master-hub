@@ -105,9 +105,9 @@ function Hero() {
 }
 
 const personas = [
-  { caption: "Mestre", img: cardMestre },
-  { caption: "Controle dos Pais pelo app", img: cardMaeFilho },
-  { caption: "Histórico de competições", img: cardAlunoRoxa },
+  { caption: "Mestre", subtitle: "Gerencie chamada, mensalidades e graduações da sua academia.", img: cardMestre },
+  { caption: "Controle dos Pais pelo app", subtitle: "Acompanhe a frequência e evolução do seu filho em tempo real.", img: cardMaeFilho },
+  { caption: "Histórico de competições", subtitle: "Veja resultados, medalhas e sua evolução no tatame.", img: cardAlunoRoxa },
 ];
 
 function Mestres() {
@@ -121,8 +121,9 @@ function Mestres() {
         {personas.map((p) => (
           <div key={p.caption} className="group relative overflow-hidden rounded-3xl border border-border bg-card p-1 transition hover:-translate-y-1 hover:shadow-[var(--shadow-glow)]">
             <img src={p.img} alt={p.caption} loading="lazy" width={512} height={640} className="aspect-[4/5] w-full rounded-[22px] object-cover" />
-            <div className="absolute inset-x-1 bottom-1 rounded-[22px] bg-gradient-to-t from-background via-background/85 to-transparent p-6 pt-20">
+            <div className="absolute inset-x-1 bottom-1 rounded-[22px] bg-gradient-to-t from-background via-background/90 to-transparent p-6 pt-20">
               <div className="text-lg font-semibold">{p.caption}</div>
+              <p className="mt-1 text-sm text-muted-foreground">{p.subtitle}</p>
             </div>
           </div>
         ))}
