@@ -12,6 +12,7 @@ import cardMaeFilho from "@/assets/card-mae-filho.jpg";
 import cardAlunoRoxa from "@/assets/card-aluno-roxa.jpg";
 import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
+import bjjeasyLogo from "@/assets/bjjeasy-logo.png";
 import { PhoneMockup } from "@/components/PhoneMockup";
 
 export const Route = createFileRoute("/")({
@@ -51,9 +52,7 @@ function Nav() {
     <header className="sticky top-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 sm:py-4">
         <a href="/" className="flex items-center gap-2 text-lg font-extrabold tracking-tight sm:text-xl">
-          <span className="grid h-9 w-9 place-items-center rounded-xl" style={{ background: "var(--gradient-gold)" }}>
-            <Dumbbell className="h-5 w-5 text-background" />
-          </span>
+          <img src={bjjeasyLogo} alt="BJJEASY" className="h-10 w-10 rounded-xl object-contain" />
           BJJ<span className="text-primary">EASY</span>
         </a>
         <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
@@ -306,9 +305,7 @@ function Footer() {
     <footer className="border-t border-border">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-10 text-sm text-muted-foreground md:flex-row">
         <div className="flex items-center gap-2 font-bold text-foreground">
-          <span className="grid h-7 w-7 place-items-center rounded-lg" style={{ background: "var(--gradient-gold)" }}>
-            <Dumbbell className="h-4 w-4 text-background" />
-          </span>
+          <img src={bjjeasyLogo} alt="BJJEASY" className="h-8 w-8 rounded-lg object-contain" />
           BJJEASY
         </div>
         <p>© {new Date().getFullYear()} BJJEASY. Feito para a comunidade do Jiu-Jitsu.</p>
