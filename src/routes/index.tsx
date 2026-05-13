@@ -51,8 +51,6 @@ function Nav() {
         <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
           <a href="/" className="hover:text-foreground/70">Início</a>
           <a href="#" className="hover:text-foreground/70">Blog</a>
-          <a href="#" className="hover:text-foreground/70">Vagas</a>
-          <a href="#" className="hover:text-foreground/70">Imprensa</a>
           <a href="#" className="hover:text-foreground/70">Assinatura</a>
           <a href="#" className="hover:text-foreground/70">Login</a>
         </nav>
