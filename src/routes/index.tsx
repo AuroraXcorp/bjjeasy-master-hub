@@ -187,15 +187,15 @@ function PorQue() {
 
 function NovoRecurso() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
-      <div className="grid items-center gap-10 rounded-3xl border border-border bg-card p-10 lg:grid-cols-2 lg:p-16" style={{ backgroundImage: "var(--gradient-hero)" }}>
+    <section style={{ backgroundColor: "var(--tint-dark)", color: "white" }}>
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-24 lg:grid-cols-2">
         <div>
-          <span className="rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent">Novo recurso</span>
-          <h2 className="mt-5 text-4xl font-extrabold leading-tight md:text-5xl">
-            Ranking de evolução <span className="bg-clip-text text-transparent" style={{ backgroundImage: "var(--gradient-gold)" }}>para sua academia 🏆</span>
+          <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white/80">Novo recurso</span>
+          <h2 className="mt-5 text-4xl font-extrabold leading-tight md:text-5xl text-white">
+            Ranking de evolução <span className="text-white/70">para sua academia 🏆</span>
           </h2>
-          <p className="mt-4 text-muted-foreground">Veja quem treinou mais no mês, quem está perto de graduar e mantenha a competição saudável dentro do tatame.</p>
-          <p className="mt-2 text-sm text-muted-foreground">Novidades toda semana 🚀</p>
+          <p className="mt-4 text-white/70">Veja quem treinou mais no mês, quem está perto de graduar e mantenha a competição saudável dentro do tatame.</p>
+          <p className="mt-2 text-sm text-white/50">Novidades toda semana 🚀</p>
         </div>
         <img src={featureDark} alt="Ranking de alunos" loading="lazy" width={800} height={1024} className="mx-auto w-full max-w-xs" />
       </div>
