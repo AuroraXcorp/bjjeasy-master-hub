@@ -220,7 +220,7 @@ const reviews = [
 
 function Reviews() {
   return (
-    <section id="avaliacoes" style={{ backgroundColor: "var(--tint-lavender)" }}>
+    <section id="avaliacoes" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-lavender) 20%, var(--tint-lavender) 80%, #fff 100%)" }}>
       <div className="mx-auto max-w-7xl px-6 py-20">
       <h2 className="mb-12 text-center text-3xl font-extrabold md:text-5xl">Milhares de mestres falam de nós</h2>
       <div className="columns-1 gap-6 md:columns-2 lg:columns-3">
