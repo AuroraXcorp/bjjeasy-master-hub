@@ -108,7 +108,7 @@ const masters = [
 
 function Mestres() {
   return (
-    <section id="mestres" style={{ backgroundColor: "var(--tint-cream)" }}>
+    <section id="mestres" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-cream) 20%, var(--tint-cream) 80%, #fff 100%)" }}>
       <div className="mx-auto max-w-7xl px-6 py-20">
       <h2 className="mb-12 text-center text-3xl font-extrabold md:text-4xl">
         Usado pelos seus mestres favoritos 🥋
