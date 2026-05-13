@@ -8,6 +8,7 @@ import master2 from "@/assets/master-2.jpg";
 import master3 from "@/assets/master-3.jpg";
 import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
+import { PhoneMockup } from "@/components/PhoneMockup";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -91,9 +92,9 @@ function Hero() {
           </p>
           <div className="mt-8"><StoreButtons /></div>
         </div>
-        <div className="relative mx-auto w-full max-w-md">
+        <div className="relative mx-auto w-full max-w-sm">
           <div className="absolute inset-0 -z-10 rounded-full blur-3xl" style={{ background: "var(--gradient-gold)", opacity: 0.25 }} />
-          <img src={heroPhone} alt="App BJJEASY na tela do celular" width={1024} height={1280} className="w-full drop-shadow-2xl" />
+          <PhoneMockup src={heroPhone} alt="App BJJEASY na tela do celular" />
         </div>
       </div>
     </section>
@@ -147,7 +148,7 @@ function Recursos() {
       </div>
 
       <div className="grid items-center gap-10 lg:grid-cols-2">
-        <img src={featureCheckin} alt="Tela de chamada" loading="lazy" width={800} height={1024} className="mx-auto w-full max-w-sm" />
+        <PhoneMockup src={featureCheckin} alt="Tela de chamada" className="max-w-[260px]" />
         <div className="grid gap-6">
           {features.map((f) => (
             <div key={f.title} className="rounded-2xl border border-border bg-card p-6">
@@ -204,7 +205,7 @@ function NovoRecurso() {
           <p className="mt-4 text-white/70">Veja quem treinou mais no mês, quem está perto de graduar e mantenha a competição saudável dentro do tatame.</p>
           <p className="mt-2 text-sm text-white/50">Novidades toda semana 🚀</p>
         </div>
-        <img src={featureDark} alt="Ranking de alunos" loading="lazy" width={800} height={1024} className="mx-auto w-full max-w-xs" />
+        <PhoneMockup src={featureDark} alt="Ranking de alunos" className="max-w-[240px]" />
       </div>
     </section>
   );
