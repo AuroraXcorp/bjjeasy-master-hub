@@ -118,6 +118,7 @@ function Mestres() {
           </div>
         ))}
       </div>
+      </div>
     </section>
   );
 }
