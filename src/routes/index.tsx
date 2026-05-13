@@ -1,11 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Apple, Play, Star, Camera, Users, Award, Calendar, Dumbbell, Bell, CheckCircle2 } from "lucide-react";
+import { Star, Camera, Users, Award, Calendar, Dumbbell, Bell, CheckCircle2 } from "lucide-react";
 import heroPhone from "@/assets/hero-phone.png";
 import featureCheckin from "@/assets/feature-checkin.png";
 import featureDark from "@/assets/feature-darkmode.png";
 import master1 from "@/assets/master-1.jpg";
 import master2 from "@/assets/master-2.jpg";
 import master3 from "@/assets/master-3.jpg";
+import appStoreBadge from "@/assets/app-store-badge.png";
+import googlePlayBadge from "@/assets/google-play-badge.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -21,20 +23,12 @@ export const Route = createFileRoute("/")({
 
 function StoreButtons() {
   return (
-    <div className="flex flex-wrap gap-3">
-      <a href="#" className="inline-flex items-center gap-3 rounded-2xl bg-foreground px-5 py-3 text-background transition hover:scale-[1.02]">
-        <Apple className="h-7 w-7" />
-        <div className="text-left leading-tight">
-          <div className="text-[10px] opacity-70">Baixe na</div>
-          <div className="text-base font-semibold">App Store</div>
-        </div>
+    <div className="flex flex-wrap items-center gap-3">
+      <a href="#" className="inline-block transition hover:scale-[1.03]">
+        <img src={appStoreBadge} alt="Baixe na App Store" className="h-14 w-auto" />
       </a>
-      <a href="#" className="inline-flex items-center gap-3 rounded-2xl bg-foreground px-5 py-3 text-background transition hover:scale-[1.02]">
-        <Play className="h-7 w-7 fill-current" />
-        <div className="text-left leading-tight">
-          <div className="text-[10px] opacity-70">Disponível no</div>
-          <div className="text-base font-semibold">Google Play</div>
-        </div>
+      <a href="#" className="inline-block transition hover:scale-[1.03]">
+        <img src={googlePlayBadge} alt="Disponível no Google Play" className="h-14 w-auto" />
       </a>
     </div>
   );
