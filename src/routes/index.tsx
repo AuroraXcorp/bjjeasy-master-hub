@@ -29,10 +29,10 @@ function StoreButtons() {
   return (
     <div className="flex flex-wrap items-center gap-3">
       <a href="#" className="inline-block transition hover:scale-[1.03]">
-        <img src={appStoreBadge} alt="Baixe na App Store" className="h-14 w-auto" />
+        <img src={appStoreBadge} alt="Baixe na App Store" className="h-14 w-44 object-contain" />
       </a>
       <a href="#" className="inline-block transition hover:scale-[1.03]">
-        <img src={googlePlayBadge} alt="Disponível no Google Play" className="h-14 w-auto" />
+        <img src={googlePlayBadge} alt="Disponível no Google Play" className="h-14 w-44 object-contain" />
       </a>
     </div>
   );
@@ -58,10 +58,10 @@ function Nav() {
         </nav>
         <div className="hidden items-center gap-2 md:flex">
           <a href="#" className="inline-block transition hover:scale-[1.03]">
-            <img src={appStoreBadge} alt="Baixe na App Store" className="h-10 w-auto" />
+            <img src={appStoreBadge} alt="Baixe na App Store" className="h-10 w-32 object-contain" />
           </a>
           <a href="#" className="inline-block transition hover:scale-[1.03]">
-            <img src={googlePlayBadge} alt="Disponível no Google Play" className="h-10 w-auto" />
+            <img src={googlePlayBadge} alt="Disponível no Google Play" className="h-10 w-32 object-contain" />
           </a>
         </div>
       </div>
