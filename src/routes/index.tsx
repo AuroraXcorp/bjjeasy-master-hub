@@ -101,7 +101,8 @@ const masters = [
 
 function Mestres() {
   return (
-    <section id="mestres" className="mx-auto max-w-7xl px-6 py-20">
+    <section id="mestres" style={{ backgroundColor: "var(--tint-cream)" }}>
+      <div className="mx-auto max-w-7xl px-6 py-20">
       <h2 className="mb-12 text-center text-3xl font-extrabold md:text-4xl">
         Usado pelos seus mestres favoritos 🥋
       </h2>
