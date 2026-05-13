@@ -151,11 +151,11 @@ const personas = [
 function Mestres() {
   return (
     <section id="mestres" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-cream) 40%, var(--tint-cream) 60%, #fff 100%)" }}>
-      <div className="mx-auto max-w-7xl px-6 py-20">
-      <h2 className="mb-12 text-center text-3xl font-extrabold md:text-4xl">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20">
+      <h2 className="mb-10 text-center text-3xl font-extrabold sm:mb-12 md:text-4xl">
         App feito pensado em todos
       </h2>
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
         {personas.map((p) => (
           <div key={p.caption} className="group relative overflow-hidden rounded-3xl border border-border bg-card p-1 transition hover:-translate-y-1 hover:shadow-[var(--shadow-glow)]">
             <img src={p.img} alt={p.caption} loading="lazy" width={512} height={640} className="aspect-[4/5] w-full rounded-[22px] object-cover" />
@@ -181,17 +181,17 @@ const features = [
 function Recursos() {
   return (
     <section id="recursos" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-mint) 40%, var(--tint-mint) 60%, #fff 100%)" }}>
-      <div className="mx-auto max-w-7xl px-6 py-20">
-      <div className="mb-14 text-center">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20">
+      <div className="mb-10 text-center sm:mb-14">
         <h2 className="text-3xl font-extrabold md:text-5xl">O que o BJJEASY oferece?</h2>
         <p className="mt-3 text-muted-foreground">Tudo que sua academia precisa em um só lugar.</p>
       </div>
 
       <div className="grid items-center gap-10 lg:grid-cols-2">
-        <PhoneMockup src={featureCheckin} alt="Tela de chamada" className="max-w-[260px]" />
-        <div className="grid gap-6">
+        <PhoneMockup src={featureCheckin} alt="Tela de chamada" className="max-w-[220px] sm:max-w-[260px]" />
+        <div className="grid gap-4 sm:gap-6">
           {features.map((f) => (
-            <div key={f.title} className="rounded-2xl border border-border bg-card p-6">
+            <div key={f.title} className="rounded-2xl border border-border bg-card p-5 sm:p-6">
               <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl text-background" style={{ background: "var(--gradient-gold)" }}>
                 <f.icon className="h-5 w-5" />
               </div>
@@ -214,14 +214,14 @@ function PorQue() {
   ];
   return (
     <section style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-sky) 40%, var(--tint-sky) 60%, #fff 100%)" }}>
-      <div className="mx-auto max-w-7xl px-6 py-20">
-        <div className="mb-12 text-center">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20">
+        <div className="mb-10 text-center sm:mb-12">
           <h2 className="text-3xl font-extrabold md:text-5xl">Por que escolher o BJJEASY?</h2>
           <p className="mt-3 text-muted-foreground">O app de gestão mais completo para academias de Jiu-Jitsu.</p>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {items.map((i) => (
-            <div key={i.title} className="rounded-2xl border border-border bg-background p-7">
+            <div key={i.title} className="rounded-2xl border border-border bg-background p-6 sm:p-7">
               <i.icon className="mb-4 h-8 w-8 text-primary" />
               <h3 className="mb-2 text-xl font-bold">{i.title}</h3>
               <p className="text-muted-foreground">{i.desc}</p>
@@ -236,16 +236,16 @@ function PorQue() {
 function NovoRecurso() {
   return (
     <section style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-mint) 40%, var(--tint-mint) 60%, #fff 100%)" }}>
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-24 lg:grid-cols-2">
-        <div>
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2">
+        <div className="text-center lg:text-left">
           <span className="rounded-full border border-border bg-card px-3 py-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Novo recurso</span>
-          <h2 className="mt-5 text-4xl font-extrabold leading-tight md:text-5xl">
+          <h2 className="mt-5 text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
             Ranking de evolução <span className="text-muted-foreground">para sua academia 🏆</span>
           </h2>
           <p className="mt-4 text-muted-foreground">Veja quem treinou mais no mês, quem está perto de graduar e mantenha a competição saudável dentro do tatame.</p>
           <p className="mt-2 text-sm text-muted-foreground">Novidades toda semana 🚀</p>
         </div>
-        <PhoneMockup src={featureDark} alt="Ranking de alunos" className="max-w-[240px]" />
+        <PhoneMockup src={featureDark} alt="Ranking de alunos" className="max-w-[220px] sm:max-w-[240px]" />
       </div>
     </section>
   );
@@ -262,9 +262,9 @@ const reviews = [
 function Reviews() {
   return (
     <section id="avaliacoes" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-navy) 12%, var(--tint-navy) 88%, #fff 100%)", color: "white" }}>
-      <div className="mx-auto max-w-7xl px-6 py-20">
-      <h2 className="mb-12 text-center text-3xl font-extrabold md:text-5xl text-white">O que nossos clientes falam de nós</h2>
-      <div className="columns-1 gap-6 md:columns-2 lg:columns-3">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20">
+      <h2 className="mb-10 text-center text-3xl font-extrabold sm:mb-12 md:text-5xl text-white">O que nossos clientes falam de nós</h2>
+      <div className="columns-1 gap-6 sm:columns-2 lg:columns-3">
         {reviews.map((r) => (
           <div key={r.name} className="mb-6 break-inside-avoid rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6">
             <div className="mb-2 flex gap-1 text-accent">
@@ -283,12 +283,12 @@ function Reviews() {
 function FinalCTA() {
   return (
     <section id="cta" className="relative overflow-hidden" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-peach) 40%, var(--tint-peach) 100%)" }}>
-      <div className="relative mx-auto max-w-4xl px-6 py-24 text-center">
+      <div className="relative mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-24">
         <div className="mb-6 flex justify-center gap-1 text-accent">
           {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-6 w-6 fill-current" />)}
         </div>
-        <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground">MESTRES EM TODO O BRASIL CONFIAM</p>
-        <h2 className="mt-4 text-4xl font-extrabold leading-tight md:text-6xl">
+        <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground sm:text-sm sm:tracking-[0.3em]">MESTRES EM TODO O BRASIL CONFIAM</p>
+        <h2 className="mt-4 text-3xl font-extrabold leading-tight sm:text-4xl md:text-6xl">
           Comece agora seu
           <span className="block bg-clip-text text-transparent" style={{ backgroundImage: "var(--gradient-gold)" }}>teste grátis de 7 dias</span>
         </h2>
