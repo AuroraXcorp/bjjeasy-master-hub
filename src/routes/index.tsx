@@ -8,6 +8,7 @@ import master2 from "@/assets/master-2.jpg";
 import master3 from "@/assets/master-3.jpg";
 import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
+import { PhoneMockup } from "@/components/PhoneMockup";
 
 export const Route = createFileRoute("/")({
   head: () => ({
