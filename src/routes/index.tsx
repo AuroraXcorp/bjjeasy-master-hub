@@ -165,7 +165,7 @@ function PorQue() {
     { icon: Award, title: "Engaje seus alunos", desc: "Eles veem aulas treinadas, evolução e próxima graduação. Mais motivação, mais retenção." },
   ];
   return (
-    <section className="border-y border-border bg-card/30">
+    <section style={{ backgroundColor: "var(--tint-sky)" }}>
       <div className="mx-auto max-w-7xl px-6 py-20">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-extrabold md:text-5xl">Por que escolher o BJJEASY?</h2>
