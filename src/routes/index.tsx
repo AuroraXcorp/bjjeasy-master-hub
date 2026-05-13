@@ -108,7 +108,7 @@ const masters = [
 
 function Mestres() {
   return (
-    <section id="mestres" style={{ backgroundColor: "var(--tint-cream)" }}>
+    <section id="mestres" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-cream) 20%, var(--tint-cream) 80%, #fff 100%)" }}>
       <div className="mx-auto max-w-7xl px-6 py-20">
       <h2 className="mb-12 text-center text-3xl font-extrabold md:text-4xl">
         Usado pelos seus mestres favoritos 🥋
@@ -139,7 +139,7 @@ const features = [
 
 function Recursos() {
   return (
-    <section id="recursos" style={{ backgroundColor: "var(--tint-mint)" }}>
+    <section id="recursos" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-mint) 20%, var(--tint-mint) 80%, #fff 100%)" }}>
       <div className="mx-auto max-w-7xl px-6 py-20">
       <div className="mb-14 text-center">
         <h2 className="text-3xl font-extrabold md:text-5xl">O que o BJJEASY oferece?</h2>
@@ -172,7 +172,7 @@ function PorQue() {
     { icon: Award, title: "Engaje seus alunos", desc: "Eles veem aulas treinadas, evolução e próxima graduação. Mais motivação, mais retenção." },
   ];
   return (
-    <section style={{ backgroundColor: "var(--tint-sky)" }}>
+    <section style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-sky) 20%, var(--tint-sky) 80%, #fff 100%)" }}>
       <div className="mx-auto max-w-7xl px-6 py-20">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-extrabold md:text-5xl">Por que escolher o BJJEASY?</h2>
@@ -194,7 +194,7 @@ function PorQue() {
 
 function NovoRecurso() {
   return (
-    <section style={{ backgroundColor: "var(--tint-dark)", color: "white" }}>
+    <section style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-dark) 12%, var(--tint-dark) 88%, #fff 100%)", color: "white" }}>
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-24 lg:grid-cols-2">
         <div>
           <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white/80">Novo recurso</span>
@@ -220,7 +220,7 @@ const reviews = [
 
 function Reviews() {
   return (
-    <section id="avaliacoes" style={{ backgroundColor: "var(--tint-lavender)" }}>
+    <section id="avaliacoes" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-lavender) 20%, var(--tint-lavender) 80%, #fff 100%)" }}>
       <div className="mx-auto max-w-7xl px-6 py-20">
       <h2 className="mb-12 text-center text-3xl font-extrabold md:text-5xl">Milhares de mestres falam de nós</h2>
       <div className="columns-1 gap-6 md:columns-2 lg:columns-3">
@@ -241,7 +241,7 @@ function Reviews() {
 
 function FinalCTA() {
   return (
-    <section id="cta" className="relative overflow-hidden border-t border-border" style={{ backgroundColor: "var(--tint-peach)" }}>
+    <section id="cta" className="relative overflow-hidden" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-peach) 25%, var(--tint-peach) 100%)" }}>
       <div className="relative mx-auto max-w-4xl px-6 py-24 text-center">
         <div className="mb-6 flex justify-center gap-1 text-accent">
           {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-6 w-6 fill-current" />)}
