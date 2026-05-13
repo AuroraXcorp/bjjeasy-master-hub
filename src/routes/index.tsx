@@ -194,7 +194,7 @@ function PorQue() {
 
 function NovoRecurso() {
   return (
-    <section style={{ backgroundColor: "var(--tint-dark)", color: "white" }}>
+    <section style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-dark) 12%, var(--tint-dark) 88%, #fff 100%)", color: "white" }}>
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-24 lg:grid-cols-2">
         <div>
           <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white/80">Novo recurso</span>
