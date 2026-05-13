@@ -153,6 +153,7 @@ function Recursos() {
           ))}
         </div>
       </div>
+      </div>
     </section>
   );
 }
