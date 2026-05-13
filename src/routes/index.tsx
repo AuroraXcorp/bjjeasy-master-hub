@@ -83,7 +83,7 @@ function Hero() {
           <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
             Conheça o BJJEASY
             <span className="mt-3 block bg-clip-text text-transparent" style={{ backgroundImage: "var(--gradient-gold)" }}>
-              Controle suas aulas com um toque
+              Controle suas aulas pelo celular
             </span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
