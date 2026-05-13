@@ -205,7 +205,7 @@ function NovoRecurso() {
           <p className="mt-4 text-white/70">Veja quem treinou mais no mês, quem está perto de graduar e mantenha a competição saudável dentro do tatame.</p>
           <p className="mt-2 text-sm text-white/50">Novidades toda semana 🚀</p>
         </div>
-        <img src={featureDark} alt="Ranking de alunos" loading="lazy" width={800} height={1024} className="mx-auto w-full max-w-xs" />
+        <PhoneMockup src={featureDark} alt="Ranking de alunos" className="max-w-[240px]" />
       </div>
     </section>
   );
