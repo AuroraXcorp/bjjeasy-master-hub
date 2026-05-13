@@ -223,17 +223,17 @@ const reviews = [
 
 function Reviews() {
   return (
-    <section id="avaliacoes" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-lavender) 40%, var(--tint-lavender) 60%, #fff 100%)" }}>
+    <section id="avaliacoes" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-navy) 12%, var(--tint-navy) 88%, #fff 100%)", color: "white" }}>
       <div className="mx-auto max-w-7xl px-6 py-20">
-      <h2 className="mb-12 text-center text-3xl font-extrabold md:text-5xl">Milhares de mestres falam de nós</h2>
+      <h2 className="mb-12 text-center text-3xl font-extrabold md:text-5xl text-white">O que nossos clientes falam de nós</h2>
       <div className="columns-1 gap-6 md:columns-2 lg:columns-3">
         {reviews.map((r) => (
-          <div key={r.name} className="mb-6 break-inside-avoid rounded-2xl border border-border bg-card p-6">
+          <div key={r.name} className="mb-6 break-inside-avoid rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6">
             <div className="mb-2 flex gap-1 text-accent">
-              {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
+              {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-4 w-4 fill-current text-yellow-400" />)}
             </div>
-            <p className="mb-3 text-sm leading-relaxed">"{r.text}"</p>
-            <div className="text-xs font-semibold text-muted-foreground">{r.name}</div>
+            <p className="mb-3 text-sm leading-relaxed text-white/90">"{r.text}"</p>
+            <div className="text-xs font-semibold text-white/60">{r.name}</div>
           </div>
         ))}
       </div>
