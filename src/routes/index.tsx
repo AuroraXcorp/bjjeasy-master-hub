@@ -92,9 +92,9 @@ function Hero() {
           </p>
           <div className="mt-8"><StoreButtons /></div>
         </div>
-        <div className="relative mx-auto w-full max-w-md">
+        <div className="relative mx-auto w-full max-w-sm">
           <div className="absolute inset-0 -z-10 rounded-full blur-3xl" style={{ background: "var(--gradient-gold)", opacity: 0.25 }} />
-          <img src={heroPhone} alt="App BJJEASY na tela do celular" width={1024} height={1280} className="w-full drop-shadow-2xl" />
+          <PhoneMockup src={heroPhone} alt="App BJJEASY na tela do celular" />
         </div>
       </div>
     </section>
