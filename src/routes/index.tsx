@@ -132,7 +132,8 @@ const features = [
 
 function Recursos() {
   return (
-    <section id="recursos" className="mx-auto max-w-7xl px-6 py-20">
+    <section id="recursos" style={{ backgroundColor: "var(--tint-mint)" }}>
+      <div className="mx-auto max-w-7xl px-6 py-20">
       <div className="mb-14 text-center">
         <h2 className="text-3xl font-extrabold md:text-5xl">O que o BJJEASY oferece?</h2>
         <p className="mt-3 text-muted-foreground">Tudo que sua academia precisa em um só lugar.</p>
