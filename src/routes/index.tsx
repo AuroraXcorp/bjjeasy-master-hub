@@ -6,6 +6,9 @@ import featureDark from "@/assets/feature-darkmode.png";
 import master1 from "@/assets/master-1.jpg";
 import master2 from "@/assets/master-2.jpg";
 import master3 from "@/assets/master-3.jpg";
+import cardMestre from "@/assets/card-mestre.jpg";
+import cardMaeFilho from "@/assets/card-mae-filho.jpg";
+import cardAlunoRoxa from "@/assets/card-aluno-roxa.jpg";
 import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
 import { PhoneMockup } from "@/components/PhoneMockup";
@@ -101,10 +104,10 @@ function Hero() {
   );
 }
 
-const masters = [
-  { name: "Prof. Rafael Souza", belt: "Faixa Preta • 3º Grau", img: master1, quote: "Com o BJJEASY economizo 5 horas por semana só na chamada e nos pagamentos." },
-  { name: "Coach Lucas Almeida", belt: "Faixa Marrom", img: master2, quote: "Meus alunos amam ver a evolução das graduações em tempo real no celular." },
-  { name: "Profa. Mariana Costa", belt: "Faixa Roxa", img: master3, quote: "Finalmente um app que entende como uma academia de Jiu-Jitsu funciona de verdade." },
+const personas = [
+  { caption: "Mestre", img: cardMestre },
+  { caption: "Controle dos Pais pelo app", img: cardMaeFilho },
+  { caption: "Histórico de competições", img: cardAlunoRoxa },
 ];
 
 function Mestres() {
@@ -112,16 +115,14 @@ function Mestres() {
     <section id="mestres" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-cream) 40%, var(--tint-cream) 60%, #fff 100%)" }}>
       <div className="mx-auto max-w-7xl px-6 py-20">
       <h2 className="mb-12 text-center text-3xl font-extrabold md:text-4xl">
-        Usado pelos seus mestres favoritos 🥋
+        App feito pensado em todos
       </h2>
       <div className="grid gap-6 md:grid-cols-3">
-        {masters.map((m) => (
-          <div key={m.name} className="group relative overflow-hidden rounded-3xl border border-border bg-card p-1 transition hover:-translate-y-1 hover:shadow-[var(--shadow-glow)]">
-            <img src={m.img} alt={m.name} loading="lazy" width={512} height={512} className="aspect-[4/5] w-full rounded-[22px] object-cover" />
+        {personas.map((p) => (
+          <div key={p.caption} className="group relative overflow-hidden rounded-3xl border border-border bg-card p-1 transition hover:-translate-y-1 hover:shadow-[var(--shadow-glow)]">
+            <img src={p.img} alt={p.caption} loading="lazy" width={512} height={640} className="aspect-[4/5] w-full rounded-[22px] object-cover" />
             <div className="absolute inset-x-1 bottom-1 rounded-[22px] bg-gradient-to-t from-background via-background/85 to-transparent p-6 pt-20">
-              <p className="mb-4 text-sm leading-snug">"{m.quote}"</p>
-              <div className="font-semibold">{m.name}</div>
-              <div className="text-xs text-accent">{m.belt}</div>
+              <div className="text-lg font-semibold">{p.caption}</div>
             </div>
           </div>
         ))}
