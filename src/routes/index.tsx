@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Star, Camera, Users, Award, Calendar, Dumbbell, Bell, CheckCircle2 } from "lucide-react";
+import { useState } from "react";
+import { Star, Camera, Users, Award, Calendar, Dumbbell, Bell, CheckCircle2, Menu, X } from "lucide-react";
 import heroPhone from "@/assets/hero-phone.png";
 import featureCheckin from "@/assets/feature-checkin.png";
 import featureDark from "@/assets/feature-darkmode.png";
@@ -29,30 +30,36 @@ function StoreButtons() {
   return (
     <div className="flex flex-wrap items-center gap-3">
       <a href="#" className="inline-block transition hover:scale-[1.03]">
-        <img src={appStoreBadge} alt="Baixe na App Store" className="h-14 w-44 object-contain" />
+        <img src={appStoreBadge} alt="Baixe na App Store" className="h-12 w-36 object-contain sm:h-14 sm:w-44" />
       </a>
       <a href="#" className="inline-block transition hover:scale-[1.03]">
-        <img src={googlePlayBadge} alt="Disponível no Google Play" className="h-14 w-44 object-contain" />
+        <img src={googlePlayBadge} alt="Disponível no Google Play" className="h-12 w-36 object-contain sm:h-14 sm:w-44" />
       </a>
     </div>
   );
 }
 
 function Nav() {
+  const [open, setOpen] = useState(false);
+  const links = [
+    { label: "Início", href: "/" },
+    { label: "Blog", href: "#" },
+    { label: "Assinatura", href: "#" },
+    { label: "Login", href: "#" },
+  ];
   return (
     <header className="sticky top-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4">
-        <a href="/" className="flex items-center gap-2 text-xl font-extrabold tracking-tight">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 sm:py-4">
+        <a href="/" className="flex items-center gap-2 text-lg font-extrabold tracking-tight sm:text-xl">
           <span className="grid h-9 w-9 place-items-center rounded-xl" style={{ background: "var(--gradient-gold)" }}>
             <Dumbbell className="h-5 w-5 text-background" />
           </span>
           BJJ<span className="text-primary">EASY</span>
         </a>
         <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
-          <a href="/" className="hover:text-foreground/70">Início</a>
-          <a href="#" className="hover:text-foreground/70">Blog</a>
-          <a href="#" className="hover:text-foreground/70">Assinatura</a>
-          <a href="#" className="hover:text-foreground/70">Login</a>
+          {links.map((l) => (
+            <a key={l.label} href={l.href} className="hover:text-foreground/70">{l.label}</a>
+          ))}
         </nav>
         <div className="hidden items-center gap-2 md:flex">
           <a href="#" className="inline-block transition hover:scale-[1.03]">
@@ -62,7 +69,40 @@ function Nav() {
             <img src={googlePlayBadge} alt="Disponível no Google Play" className="h-10 w-32 object-contain" />
           </a>
         </div>
+        <button
+          type="button"
+          aria-label={open ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+          className="grid h-10 w-10 place-items-center rounded-lg border border-border md:hidden"
+        >
+          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
       </div>
+      {open && (
+        <div className="border-t border-border/40 bg-background/95 backdrop-blur-xl md:hidden">
+          <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 text-sm font-semibold">
+            {links.map((l) => (
+              <a
+                key={l.label}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="rounded-md px-3 py-2 hover:bg-accent/10"
+              >
+                {l.label}
+              </a>
+            ))}
+            <div className="mt-2 flex flex-wrap gap-2 px-3 pb-2">
+              <a href="#" className="inline-block">
+                <img src={appStoreBadge} alt="Baixe na App Store" className="h-10 w-32 object-contain" />
+              </a>
+              <a href="#" className="inline-block">
+                <img src={googlePlayBadge} alt="Disponível no Google Play" className="h-10 w-32 object-contain" />
+              </a>
+            </div>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
@@ -71,9 +111,9 @@ function Hero() {
   return (
     <section className="relative overflow-hidden bg-background">
       <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse at top, oklch(0.97 0 0), transparent 70%)" }} />
-      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-6 py-20 lg:grid-cols-2 lg:py-28">
-        <div>
-          <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-border bg-card/60 px-4 py-2 text-sm">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-2 lg:py-28">
+        <div className="text-center lg:text-left">
+          <div className="mb-6 inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-border bg-card/60 px-3 py-2 text-xs sm:gap-3 sm:px-4 sm:text-sm">
             <div className="flex -space-x-2">
               <img src={master1} alt="" className="h-6 w-6 rounded-full border-2 border-background object-cover" />
               <img src={master2} alt="" className="h-6 w-6 rounded-full border-2 border-background object-cover" />
@@ -82,18 +122,18 @@ function Hero() {
             <span className="text-muted-foreground">Usado por mestres em todo o 🇧🇷 com</span>
             <span className="inline-flex items-center gap-1 font-semibold text-accent"><Star className="h-3.5 w-3.5 fill-current" /> 4.9</span>
           </div>
-          <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+          <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Conheça o BJJEASY
             <span className="mt-3 block bg-clip-text text-transparent" style={{ backgroundImage: "var(--gradient-gold)" }}>
               Controle suas aulas pelo celular
             </span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-muted-foreground">
+          <p className="mx-auto mt-6 max-w-xl text-base text-muted-foreground sm:text-lg lg:mx-0">
             O BJJEASY é o app feito para mestres de Jiu-Jitsu. Faça chamada, acompanhe graduações, gerencie mensalidades e organize sua academia em segundos.
           </p>
-          <div className="mt-8"><StoreButtons /></div>
+          <div className="mt-8 flex justify-center lg:justify-start"><StoreButtons /></div>
         </div>
-        <div className="relative mx-auto w-full max-w-sm">
+        <div className="relative mx-auto w-full max-w-[260px] sm:max-w-sm">
           <div className="absolute inset-0 -z-10 rounded-full blur-3xl" style={{ background: "var(--gradient-gold)", opacity: 0.25 }} />
           <PhoneMockup src={heroPhone} alt="App BJJEASY na tela do celular" />
         </div>
