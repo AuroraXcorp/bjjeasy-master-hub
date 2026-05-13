@@ -247,7 +247,7 @@ function FinalCTA() {
         <div className="mb-6 flex justify-center gap-1 text-accent">
           {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-6 w-6 fill-current" />)}
         </div>
-        <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground">Mais de 100 mil mestres confiam</p>
+        <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground">MESTRES EM TODO O BRASIL CONFIAM</p>
         <h2 className="mt-4 text-4xl font-extrabold leading-tight md:text-6xl">
           Comece agora seu
           <span className="block bg-clip-text text-transparent" style={{ backgroundImage: "var(--gradient-gold)" }}>teste grátis de 7 dias</span>
