@@ -227,6 +227,7 @@ function Reviews() {
           </div>
         ))}
       </div>
+      </div>
     </section>
   );
 }
