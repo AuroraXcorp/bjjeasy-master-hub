@@ -234,8 +234,7 @@ function Reviews() {
 
 function FinalCTA() {
   return (
-    <section id="cta" className="relative overflow-hidden border-t border-border">
-      <div className="pointer-events-none absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
+    <section id="cta" className="relative overflow-hidden border-t border-border" style={{ backgroundColor: "var(--tint-peach)" }}>
       <div className="relative mx-auto max-w-4xl px-6 py-24 text-center">
         <div className="mb-6 flex justify-center gap-1 text-accent">
           {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-6 w-6 fill-current" />)}
