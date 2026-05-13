@@ -213,7 +213,8 @@ const reviews = [
 
 function Reviews() {
   return (
-    <section id="avaliacoes" className="mx-auto max-w-7xl px-6 py-20">
+    <section id="avaliacoes" style={{ backgroundColor: "var(--tint-lavender)" }}>
+      <div className="mx-auto max-w-7xl px-6 py-20">
       <h2 className="mb-12 text-center text-3xl font-extrabold md:text-5xl">Milhares de mestres falam de nós</h2>
       <div className="columns-1 gap-6 md:columns-2 lg:columns-3">
         {reviews.map((r) => (
