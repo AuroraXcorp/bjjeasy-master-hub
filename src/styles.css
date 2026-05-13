@@ -103,6 +103,7 @@
   --tint-lavender: oklch(0.98 0.012 300);
   --tint-peach: oklch(0.985 0.014 45);
   --tint-dark: oklch(0.18 0.005 260);
+  --tint-navy: oklch(0.22 0.06 260);
 
   --gradient-gold: linear-gradient(135deg, oklch(0.25 0 0), oklch(0.05 0 0));
   --shadow-glow: 0 30px 80px -20px oklch(0 0 0 / 0.15);
