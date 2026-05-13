@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Bjjeasy" },
+      { name: "description", content: "BJJEASY is a Jiu-Jitsu app for instructors to manage classes, students, and progress." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Bjjeasy" },
+      { property: "og:description", content: "BJJEASY is a Jiu-Jitsu app for instructors to manage classes, students, and progress." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Bjjeasy" },
+      { name: "twitter:description", content: "BJJEASY is a Jiu-Jitsu app for instructors to manage classes, students, and progress." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/dc3c0c1d-eb26-4225-a962-edf9500664c2/id-preview-edc62f54--3f04024f-f500-4810-a1e5-b08f1ba374a1.lovable.app-1778634032812.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/dc3c0c1d-eb26-4225-a962-edf9500664c2/id-preview-edc62f54--3f04024f-f500-4810-a1e5-b08f1ba374a1.lovable.app-1778634032812.png" },
     ],
     links: [
       {
