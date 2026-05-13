@@ -197,15 +197,15 @@ function PorQue() {
 
 function NovoRecurso() {
   return (
-    <section style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-dark) 12%, var(--tint-dark) 88%, #fff 100%)", color: "white" }}>
+    <section style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-mint) 40%, var(--tint-mint) 60%, #fff 100%)" }}>
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-24 lg:grid-cols-2">
         <div>
-          <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white/80">Novo recurso</span>
-          <h2 className="mt-5 text-4xl font-extrabold leading-tight md:text-5xl text-white">
-            Ranking de evolução <span className="text-white/70">para sua academia 🏆</span>
+          <span className="rounded-full border border-border bg-card px-3 py-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Novo recurso</span>
+          <h2 className="mt-5 text-4xl font-extrabold leading-tight md:text-5xl">
+            Ranking de evolução <span className="text-muted-foreground">para sua academia 🏆</span>
           </h2>
-          <p className="mt-4 text-white/70">Veja quem treinou mais no mês, quem está perto de graduar e mantenha a competição saudável dentro do tatame.</p>
-          <p className="mt-2 text-sm text-white/50">Novidades toda semana 🚀</p>
+          <p className="mt-4 text-muted-foreground">Veja quem treinou mais no mês, quem está perto de graduar e mantenha a competição saudável dentro do tatame.</p>
+          <p className="mt-2 text-sm text-muted-foreground">Novidades toda semana 🚀</p>
         </div>
         <PhoneMockup src={featureDark} alt="Ranking de alunos" className="max-w-[240px]" />
       </div>
@@ -223,17 +223,17 @@ const reviews = [
 
 function Reviews() {
   return (
-    <section id="avaliacoes" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-lavender) 40%, var(--tint-lavender) 60%, #fff 100%)" }}>
+    <section id="avaliacoes" style={{ background: "linear-gradient(180deg, #fff 0%, var(--tint-navy) 12%, var(--tint-navy) 88%, #fff 100%)", color: "white" }}>
       <div className="mx-auto max-w-7xl px-6 py-20">
-      <h2 className="mb-12 text-center text-3xl font-extrabold md:text-5xl">Milhares de mestres falam de nós</h2>
+      <h2 className="mb-12 text-center text-3xl font-extrabold md:text-5xl text-white">O que nossos clientes falam de nós</h2>
       <div className="columns-1 gap-6 md:columns-2 lg:columns-3">
         {reviews.map((r) => (
-          <div key={r.name} className="mb-6 break-inside-avoid rounded-2xl border border-border bg-card p-6">
+          <div key={r.name} className="mb-6 break-inside-avoid rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6">
             <div className="mb-2 flex gap-1 text-accent">
-              {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
+              {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-4 w-4 fill-current text-yellow-400" />)}
             </div>
-            <p className="mb-3 text-sm leading-relaxed">"{r.text}"</p>
-            <div className="text-xs font-semibold text-muted-foreground">{r.name}</div>
+            <p className="mb-3 text-sm leading-relaxed text-white/90">"{r.text}"</p>
+            <div className="text-xs font-semibold text-white/60">{r.name}</div>
           </div>
         ))}
       </div>
